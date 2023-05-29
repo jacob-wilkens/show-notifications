@@ -1,0 +1,20 @@
+{
+  "extends": ["next/core-web-vitals", "eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:unicorn/recommended", "plugin:mocha/recommended", "plugin:jsx-a11y/recommended"],
+  "plugins": ["prettier", "unicorn", "mocha", "autofix"],
+  "rules": {
+    "@typescript-eslint/consistent-type-imports": ["error", { "prefer": "type-imports" }],
+    "no-unused-vars": "error",
+    "prettier/prettier": "error",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/button-has-type": "error",
+    "react/no-array-index-key": "error",
+    "react/display-name": "error",
+    "react/no-children-prop": "error",
+    "react/no-danger-with-children": "error",
+    "react/jsx-no-bind": ["error", { "ignoreDOMComponents": true, "ignoreRefs": true, "allowArrowFunctions": true }],
+    "arrow-body-style": ["error", "as-needed"],
+    "react/self-closing-comp": ["error", { "component": true, "html": true }],
+    "autofix/no-unused-vars": ["error", { "argsIgnorePattern": "^_", "ignoreRestSiblings": true, "destructuredArrayIgnorePattern": "^_" }]
+  }
+}

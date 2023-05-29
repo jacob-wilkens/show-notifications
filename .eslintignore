@@ -1,0 +1,11 @@
+.next
+public
+node_modules
+yarn.lock
+package-lock.json
+**/*.test.js
+coverage
+next.config.js
+tailwind.config.js
+postcss.config.js
+next-env.d.ts
